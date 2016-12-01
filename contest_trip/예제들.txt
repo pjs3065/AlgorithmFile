@@ -1,0 +1,87 @@
+1
+3
+seoul
+suwon
+daejeon
+3
+2
+0949 seoul
+1006 suwon
+2
+1325 seoul
+1550 daejeon
+2
+1205 suwon
+1411 daejeon
+0800
+seoul
+daejeon
+
+
+
+
+
+
+
+1
+3
+seoul
+suwon
+daejeon
+3
+2
+0349 seoul
+1006 suwon
+2
+1325 seoul
+1550 daejeon
+2
+1205 suwon
+1411 daejeon
+0800
+seoul
+daejeon
+
+
+
+
+
+
+1
+3
+seoul
+suwon
+daejeon
+3
+2
+0949 seoul
+1306 suwon
+2
+1425 seoul
+1650 daejeon
+2
+1105 suwon
+1211 daejeon
+0800
+seoul
+daejeon
+
+
+1
+3
+seoul
+suwon
+daejeon
+3
+2
+1049 seoul
+1406 suwon
+2
+1425 seoul
+2050 daejeon
+2
+1600 suwon
+1711 daejeon
+0800
+seoul
+daejeon
