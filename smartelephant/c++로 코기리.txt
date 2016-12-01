@@ -1,0 +1,28 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+struct Elephant { int i=1, W, S; };
+bool cmp(Elephant& a, Elephant& b) { return (a.W<b.W||(a.W==b.W && a.S>b.S)); }
+int main() {
+Elephant E;
+vector<Elephant> v;
+while (cin>>E.W>>E.S) { v.push_back(E);E.i++; }
+sort(v.begin(),v.end(),cmp);
+int N=v.size(),idx=N-1;
+vector<vector<int>> es(N);
+es[N-1].push_back(N-1);
+for (int i=N-2;i>=0;i--) {
+es[i].push_back(i);
+for (int j=i+1;j<N;j++)
+if (es[i].size()<1+es[j].size()&&(v[i].W<v[j].W) &&(v[i].S>v[j].S)) {
+es[i]=es[j]; es[i].push_back(i);
+}
+if (es[idx].size()<es[i].size()) idx=i;
+}
+cout<<es[idx].size()<<endl;
+for (int i=es[idx].size()-1;i>=0;i--)
+cout<<v[es[idx][i]].i<<endl;
+return 0;
+}
+3
